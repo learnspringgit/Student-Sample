@@ -10,7 +10,7 @@ Start Eureka server in 8761 and zipkin server in 9411 before this application
 
 build and run the student sample which runs in localhost:8090
 
-appication will be connected with eureka which is running in localhost:8761, and this application name will be shown in eureka dashboard.
+application will be connected with eureka which is running in localhost:8761, and this application name will be shown in eureka dashboard.
 
 check if the student application is working fine, try to hit
 
@@ -22,5 +22,27 @@ Expected Response: {"name":"sumanth","address":"Pune","cls":"MCA"}
 
 ==========================================================================
 
+#logging:
+
+Lombok dependency has been added to the project, so we can use @Slf4j annotation and add logging.
+
+There are 5 levels of logs based on usage 
+  - Trace
+  - Debug
+  - Info
+  - Warn 
+  - Error
+  
+These are in the order of low to high priority.
+Default log level is info, so the logs of info and higher only will get logged.
+
+This log level can be modified by the below property in the yml file,
+logging:
+  level:
+    root: warn
+
+==========================================================================
 If you want to find the details for each request, open zipkin dashboard and find the trace details
+
+==========================================================================
 
