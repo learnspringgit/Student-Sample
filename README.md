@@ -1,6 +1,8 @@
 # Student-Sample
-Sample Application to learn Eureka discovery and Zuul Routing
+Sample Application to learn Eureka discovery, Zuul Routing and zipkin traces
 
+==========================================================================
+Start Eureka server in 8761 and zipkin server in 9411 before this application
 ==========================================================================
 
 build and run the student sample which runs in localhost:8090
@@ -14,3 +16,8 @@ Expected response: Hello sumanth Responsed on : Tue Oct 02 15:35:22 IST 2018
 
 localhost:8090/getStudentDetails/sumanth
 Expected Response: {"name":"sumanth","address":"Pune","cls":"MCA"}
+
+==========================================================================
+
+If you want to find the details for each request, open zipkin dashboard and find the trace details
+
